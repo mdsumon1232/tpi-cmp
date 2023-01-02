@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+/* hero-area section start*/
+.hero-area {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: Radial-gradient(rgba(128, 128, 128, 0.849), rgba(0, 0, 0, 0.705)), url(images/hero-banar);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    text-align: center;
+    color: black;
+}
+
+.hero-area h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.hero-text h2 {
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-text a {
+    padding: 7px 10px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-area a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+/* hero-area section end*/
+/* institute introduction start */
+.introduction {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.introduction h1 {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.institute-introduction {
+    width: 100%;
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.212);
+    box-shadow: 2px 1px 12px gray;
+}
+
+.institute-images {
+    width: 40%;
+}
+
+.institute-images img {
+    height: 100%;
+}
+
+.institute-about {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.institute-about h2 {
+    padding: 10px;
+}
+
+.institute-about p {
+    line-height: 22px;
+    margin-left: 30px;
+    text-justify: distribute-all-lines;
+}
+
+/* institute introduction end */
+/* department introduce starts */
+.department-introduction {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.212);
+    box-shadow: 2px 1px 12px gray;
+    margin-top: 20px;
+}
+
+.department-about {
+    width: 50%;
+
+}
+
+.department-about h2 {
+    padding: 10px;
+}
+
+.department-about p {
+    line-height: 22px;
+    margin-left: 30px;
+    text-justify: distribute-all-lines;
+}
+
+.department-images {
+    width: 40%;
+    margin-left: 30px;
+}
+
+.department-images img {
+    height: 100%;
+}
+
+/* introduction responsive start
+for mobile */
+@media only screen and (max-width:576px) {
+    .department-introduction {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+    }
+
+    .department-about {
+        width: 100%;
+    }
+
+    .department-about p {
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    .department-images {
+        width: 100%;
+        margin: 0;
+    }
+
+    .department-images img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    /* institute */
+    .institute-introduction {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .institute-images {
+        width: 100%;
+    }
+
+    .institute-images img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .institute-about {
+        width: 100%;
+        margin: 0;
+    }
+
+    .institute-about p {
+        padding-bottom: 10px;
+
+    }
+}
+
+/* introduction responsive end */
+/* department introduce end */
+/* ci sir message start */
+.message-content {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+
+}
+
+.ci-sir {
+    width: 20%;
+    background-color: #D2D2D4;
+    border: 1px solid red;
+    padding: 20px 05px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 15px black;
+    transition: 0.4s;
+}
+
+.ci-sir:hover {
+    box-shadow: 4px 5px 15px black
+}
+
+.ci-sir h4 {
+    padding: 5px;
+}
+
+.ci-sir p {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.message {
+    width: 80%;
+    border: 1px solid red;
+    margin-left: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #D2D2D4;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 15px black;
+    transition: 0.5s;
+}
+
+.message:hover {
+    box-shadow: .5px 1px 10px black
+}
+
+.message h1 {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.message p {
+    font-size: 17px;
+    line-height: 22px;
+    padding-left: 20px;
+}
+
+/* responsive start
+for mobile */
+@media only screen and (max-width:576px) {
+    .message-content {
+        flex-direction: column;
+
+    }
+
+    .ci-sir {
+        width: 100%;
+        box-shadow: 2px 1px 10px gray;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .message {
+        width: 100%;
+        margin: 10px 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 2px 1px 10px gray;
+    }
+
+    .message p {
+        padding-bottom: 20px;
+
+    }
+}
+
+/* responsive end */
+/* ci sir message end */

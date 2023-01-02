@@ -1,0 +1,162 @@
+header {
+    width: 100%;
+}
+
+.top-header {
+    width: 100%;
+    background-color: #2ECC71;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.institute-corner {
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.department {
+    width: 40%;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.institute-logo {
+    width: 15%;
+}
+
+.institute-name {
+    width: 80%;
+}
+
+.institute-name h2 {
+    padding: 5px;
+}
+
+.institute-name h3 {
+    padding: 5px;
+}
+
+/* responsive start */
+/* for mobile */
+@media only screen and (max-width:576px) {
+    .top-header {
+        display: block;
+    }
+
+    .institute-corner {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .institute-name {
+        margin-left: 5px;
+    }
+
+    .department {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+/* responsive end */
+/* bottom header start */
+.bottom-header {
+    width: 100%;
+    background-color: #1ABC9C;
+}
+
+.togle {
+    width: 5%;
+    margin-left: 20px;
+    position: relative;
+    height: 30px;
+    padding-top: 10px;
+
+
+}
+
+#bar {
+    position: absolute;
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+nav {
+    width: 97%;
+    padding: 10px;
+}
+
+nav ul {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    top: 90%;
+    transition: 0.3s;
+
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li a {
+    text-align: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/* responsive start */
+/* for mobile */
+@media only screen and (max-width:576px) {
+    nav {
+        width: 100%;
+    }
+
+    #ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li:hover::after {
+        width: 0;
+    }
+
+    nav ul li a:hover {
+        color: wheat;
+    }
+}
+
+/* responsive end */
+/* bottom header end */
