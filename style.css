@@ -386,6 +386,7 @@ for mobile */
     }
     .right-side{
         width: 100%;
+        margin-bottom: 10px;
     }
 }
 /* responsive end */
