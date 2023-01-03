@@ -293,3 +293,103 @@ for mobile */
 
 /* responsive end */
 /* ci sir message end */
+/* link and notice start */
+.notice-link-content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.notice-corner{
+    width: 60%;
+}
+.link{
+    width: 40%;
+}
+.recent-notice{
+    width: 100%;
+    border: 3px solid gray;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    
+}
+.last-notice{
+    width: 30%;
+    padding: 10px 0;
+    background-color: gray;
+}
+.marquee a{
+    text-decoration: none;
+    color: black;
+}
+/* notice bord start */
+.notice-bord{
+    width: 100%;
+    border: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.301);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.notice-bord h1{
+    padding: 20px;
+    
+}
+.notice{
+    width: 95%;
+    margin: 10px auto;
+}
+.notice p{
+    padding: 5px;
+    font-size: 15px;
+}
+/* right side start */
+.right-side{
+    width: 38%;
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.important-link{
+    width: 100%;
+    margin: 0 auto;
+}
+.right-side h1{
+    padding: 10px;
+}
+.link{
+    width: 100%;
+}
+.link ol{
+    width: 95%;
+    margin-left:20px;
+    padding: 10px;
+}
+.link ol li{
+    padding-bottom: 5px;
+}
+.link ol li a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+/* responsive start
+for mobile */
+@media only screen and (max-width:576px) {
+    .notice-link-content{
+        flex-direction: column;
+    }
+    .notice-corner{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+    }
+}
+/* responsive end */
+
+/* right side end */
+/* notice bord  end */
+/* link and notice end */
