@@ -15,6 +15,7 @@ img {
 .container {
     max-width: 1000px;
     width: 100%;
+    height: auto;
     margin: 0 auto;
     border: 1px solid black;
 }
@@ -394,3 +395,52 @@ for mobile */
 /* right side end */
 /* notice bord  end */
 /* link and notice end */
+/* contact corner start */
+.contract-corner{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.location{
+    width: 60%;
+}
+.map{
+    width: 40%;
+}
+.map h1{
+    padding: 10px;
+}
+.contract{
+    width: 100%;
+}
+.contract h1{
+    padding: 5px;
+}
+.contract p{
+    padding: 5px;
+    font-size: 16px;
+}
+.social-icon{
+    width: 100%;
+    margin-top: 10px;
+}
+.social-icon ul{
+    margin: 0;
+    padding: 0px;
+}
+.social-icon ul li{
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.social-icon ul li a img{
+    width: 100%;
+    height: 100%;
+} 
+
+/* contact corner end */
